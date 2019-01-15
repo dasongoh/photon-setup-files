@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ~
+./respawn.sh 'java -server -Xconcurrentio -XX:+HeapDumpOnOutOfMemoryError -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:MetaspaceSize=100M -XX:NewRatio=2 -jar photon-0.3.0.jar -listen-port 80 &' 60 &
